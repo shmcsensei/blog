@@ -1,10 +1,10 @@
 FROM ruby:3.1
 
-WORKDIR /site
+WORKDIR /docs
 
 RUN gem install bundler jekyll
 
-COPY site/Gemfile       /site/Gemfile
-COPY site/Gemfile.lock  /site/Gemfile.lock
+COPY docs/Gemfile       /docs/Gemfile
+COPY docs/Gemfile.lock  /docs/Gemfile.lock
 
 RUN bundle install

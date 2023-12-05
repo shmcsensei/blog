@@ -6,7 +6,9 @@ services:
       dockerfile: ./docker/dockerfile-ruby
       context: ./
     volumes:
-      - './site:/site'
+      - './docs:/docs'
     ports:
       - '4001:4000'
-    command: bundle exec jekyll serve --host 0.0.0.0.0 --trace
+    command: bundle exec jekyll serve --trace --host 0.0.0.0
+    extra_hosts:
+      localhost: 127.0.0.1
