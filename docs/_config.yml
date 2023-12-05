@@ -33,6 +33,8 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 
 permalink: /:year/:month/:day/:title
 
+show_excerpts: true
+
 # Build settings
 theme: minima
 # plugins:
