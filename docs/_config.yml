@@ -31,6 +31,8 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+permalink: /:year/:month/:day/:title
+
 # Build settings
 theme: minima
 # plugins:
